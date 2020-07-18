@@ -18,10 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
         
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.windowScene = scene as! UIWindowScene
+        window?.rootViewController = UINavigationController(rootViewController: HeroTableViewController())
+        window?.windowScene = scene as? UIWindowScene
+        window?.makeKeyAndVisible()
         //guard let _ = (scene as? UIWindowScene) else { return }
     }
 

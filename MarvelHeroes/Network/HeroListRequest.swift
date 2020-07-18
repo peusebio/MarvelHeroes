@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct HeroRequest {
+struct HeroListRequest {
     var path: String {
         return "/characters"
     }
     let parameters: [String : String]
     
-    static func with(limit: Int) -> HeroRequest{
+    static func with(limit: Int) -> HeroListRequest{
         let parameters = ["limit" : "\(limit)"]
-        return HeroRequest(parameters: parameters)
+        return HeroListRequest(parameters: parameters)
     }
 }

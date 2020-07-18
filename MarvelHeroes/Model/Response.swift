@@ -8,8 +8,14 @@
 
 import Foundation
 
-struct Response: Decodable{
+struct HeroResponse: Decodable{
     let code: Int
     let status: String
-    let data: Data
+    let data: HeroResponseData
+}
+
+struct HeroArtworkResponse: Decodable{
+    let code: Int
+    let status: String
+    let data: HeroArtworkResponseData
 }

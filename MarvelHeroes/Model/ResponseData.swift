@@ -8,8 +8,13 @@
 
 import Foundation
 
-struct Data: Decodable {
+struct HeroResponseData: Decodable {
     let total: Int
     let offset: Int
     let results: [Hero]
+}
+
+struct HeroArtworkResponseData: Decodable {
+    let count: Int?
+    let results: [HeroArtwork]
 }
